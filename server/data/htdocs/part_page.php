@@ -20,8 +20,8 @@ if (isset($_POST['done']) && !empty($_POST['login'])) {
 }
 
     $host = 'localhost';  
-    $user = 'root';  
-    $pass = ''; 
+    $user = 'participant';  
+    $pass = 'qwerty123'; 
     $db_name = 'competitions'; 
 	$conn = new mysqli($host, $user, $pass, $db_name);
 
