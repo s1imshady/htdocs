@@ -88,7 +88,7 @@ if (isset($_POST['table_name']) && isset($_POST['create'])) {
                 break;
             case 'distance':                
                 $stmt = $pdo->prepare("ALTER TABLE $tableName ADD COLUMN dist INT(6) UNSIGNED,
-                                       ADD COLUMN time TIME");
+                                       ADD COLUMN time TIMESTAMP(2)");
                 $stmt->execute(); 
                 echo "Таблица $tableName с полями id, part_id, added_by, dist, time успешно создана.";
                 break;
@@ -157,7 +157,7 @@ elseif (isset($_POST['table_name']) && isset($_POST['edit']))
 				else
 				{			
                     $stmt = $pdo->prepare("ALTER TABLE $tableName CHANGE $col4 dist INT(6) UNSIGNED,
-					                                              CHANGE $col5 time TIME"); 
+					                                              CHANGE $col5 time TIMESTAMP(2)"); 
                     $stmt->execute(); 
                     echo "Столбцы в таблице $tableName успешно заменены.";
 				}
