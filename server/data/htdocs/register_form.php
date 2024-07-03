@@ -57,8 +57,8 @@
 <?php
 // подключение к БД
 $db_host = "localhost";
-$db_user = "root"; 
-$db_password = "1234"; // ТУТ МОЖЕТ БЫТЬ ПОЛЬЗОВАТЕЛЬ У КОТОРОГО БУДУТ ПРАВА ТОЛЬКО НА INSERT, SELECT К БД
+$db_user = "host"; 
+$db_password = "host"; // ТУТ МОЖЕТ БЫТЬ ПОЛЬЗОВАТЕЛЬ У КОТОРОГО БУДУТ ПРАВА ТОЛЬКО НА INSERT, SELECT К БД
 $db_base = "competitions"; 
 $db_table_user = "user";
 $db_table_add_info = "add_info";
@@ -157,7 +157,7 @@ try{
                     else{
                         echo "Введенный код доступа недействителен! Попробуйте еще раз!";
                     }
-                } else {echo "Введите код доступа!";}
+                }
             }  else {
                 echo "Заполните поля: 'Логин', 'Пароль'!";
             } 

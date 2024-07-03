@@ -19,8 +19,8 @@
 <?php
 
 $db_host = "localhost";
-$db_user = "root"; 
-$db_password = "1234";  // ТУТ МОЖЕТ БЫТЬ ПОЛЬЗОВАТЕЛЬ, У КОТОРОГО ПРАВА SELECT К БД
+$db_user = "host"; 
+$db_password = "host";  // ТУТ МОЖЕТ БЫТЬ ПОЛЬЗОВАТЕЛЬ, У КОТОРОГО ПРАВА SELECT, insert К БД
 $db_base = "competitions"; 
 $db_table_user = "user";
 
@@ -42,7 +42,7 @@ try{
           $_SESSION['id_user'] = $row['id_user']; 
           $_SESSION['login'] = $login;
           sleep(2);
-          header("Location: http://localhost/1.php"); // тут должна быть форма 3
+          header("Location: http://localhost/add_table.php"); // тут должна быть форма 3
           exit;
         }
         if ($row['role'] === 1){ // ref
@@ -52,7 +52,7 @@ try{
           $_SESSION['id_user'] = $row['id_user'];  
           $_SESSION['login'] = $login;
           sleep(2);
-          header("Location: http://localhost/2.php"); // тут должна быть форма 4
+          header("Location: http://localhost/add_result.php"); // тут должна быть форма 4
           exit;
         }
         if ($row['role'] === 2){ // part
@@ -62,7 +62,7 @@ try{
           $_SESSION['id_user'] = $row['id_user']; 
           $_SESSION['login'] = $login;
           sleep(2);
-          header("Location: http://localhost/3.php"); // тут должна быть форма 5
+          header("Location: http://localhost/part_page.php"); // тут должна быть форма 5
           exit;
         }
       }
