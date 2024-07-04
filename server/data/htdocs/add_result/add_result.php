@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="add_result/style_add_result.css">
+<link rel="stylesheet" href="style_add_result.css">
 
 <?php
 
@@ -58,7 +58,7 @@ if (isset($_GET['but1'])){
 }
 ?>
 
-<form action="add_result/add_result.php" name="form1">
+<form action="add_result.php" name="form1">
 	<p class="title_sport">Выберите дисциплину<p>
 	<p class="title_table">Предварительный список,добавляемых записей<p>
 	<input class="input_sport" list='list_sports' name = 'input_sport' value="<?= $sport?>">
@@ -212,7 +212,7 @@ catch (Exception $ex) {
 }
 ?>
 
-<form action="add_result/add_result.php" name="form3">
+<form action="add_result.php" name="form3">
 
 <?php
 	$column_name = $_SESSION['add_result']['column_name'];
