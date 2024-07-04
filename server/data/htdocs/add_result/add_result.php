@@ -249,7 +249,9 @@ catch (Exception $ex) {
 			}
 		}
 		echo "</table></div><input name=\"but_send\" type=\"submit\"></div>";
-		
+		 
+		 
+		 
 		
 		if (isset($_GET['but_send'])){				
 			
