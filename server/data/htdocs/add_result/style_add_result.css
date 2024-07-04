@@ -1,0 +1,83 @@
+div.table_body{
+	position: relative;
+	height: 200px;
+	
+	overflow-x: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+div.div_table{
+	position: fixed;
+	
+	top: 40px;
+	left: 400px;
+	height: 300px;
+
+}
+
+.table_pole{
+	width: 100%;
+}
+
+.table_title{
+	
+	table-layout: fixed;
+	border: none;
+}
+
+.table_title th {
+	width: 70px;
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 50px;
+	background: #d8d8d8;
+	font-size: 14px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.table_pole tbody td {
+	width: 70px;
+	text-align: left;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 10px 50px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table_pole tbody tr:nth-child(even){
+	background: #f3f3f3;
+}
+
+.button_del{
+	width: 100%;
+	color: red;
+}
+
+input.input_sport{
+	position: relative;
+	left: 0px;
+    top: 0px;
+
+}
+
+input.but1{
+	position: relative;
+	left: 0px;
+    top: 0px;
+
+}
+
+p.title_sport{
+	position: relative;
+	left: 0px;
+    top: 0px;
+}
+
+p.title_table{
+	position: absolute;
+	left: 400px;
+    top: -10px;	
+}
