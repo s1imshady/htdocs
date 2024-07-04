@@ -249,11 +249,9 @@ catch (Exception $ex) {
 			}
 		}
 		echo "</table></div><input name=\"but_send\" type=\"submit\"></div>";
-		 
-		 
-		 
-		
-		if (isset($_GET['but_send'])){				
+	}
+	
+	if (isset($_GET['but_send'])){				
 			
 			for ($i=0;$i<count($_SESSION['add_result']['table_pole']);$i++){
 				
@@ -274,12 +272,10 @@ catch (Exception $ex) {
 				}
 				$sql_insert = $sql_insert." )";
 			
-				if ($is_correct)
-					$link->query($sql_insert);
+				$link->query($sql_insert);
 			}
 			
 			unset($_SESSION['add_result']['table_pole']);
 		}
-	}
 ?>
 </form>
