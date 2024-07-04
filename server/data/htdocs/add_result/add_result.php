@@ -4,6 +4,8 @@
 
 session_start();
 
+if (!isset($_SESSION['login'])) $_SESSION['login'] = "test_ref";
+
 if (isset($list_column)) print_r($list_column);
 
 if (isset($_SESSION['add_result']['table_pole'])){
@@ -141,7 +143,7 @@ try {
 
 		echo "</form>";
 		
-		$id_ref = 13;
+		$id_ref = $_SESSION['login'];
 		$list_value = array();
 		$column = "";
 		
